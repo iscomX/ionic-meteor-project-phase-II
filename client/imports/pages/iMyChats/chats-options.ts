@@ -3,6 +3,7 @@ import { Alert, AlertController, NavController, ViewController } from 'ionic-ang
 import { PhoneService } from '../../services/iMyPhone';
 import { LoginPage } from '../iMyLogin/login';
 import { ProfilePage } from '../iMyProfile/profile';
+import { ProfileFixPage, } from '../iMyProfile/profileFix';
 import template from './chats-options.html';
 
 @Component({
@@ -19,7 +20,7 @@ export class ChatsOptionsComponent {
 
   editProfile(): void {
     this.viewCtrl.dismiss().then(() => {
-      this.navCtrl.push(ProfilePage);
+      this.navCtrl.push(ProfileFixPage);
     });
   }
 
