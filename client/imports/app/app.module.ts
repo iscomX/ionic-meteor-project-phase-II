@@ -12,6 +12,7 @@ import { MessagesOptionsComponent } from '../pages/iMyMessages/messages-options'
 import { NewLocationMessageComponent } from '../pages/iMyMessages/location-message';
 import { ShowPictureComponent } from '../pages/iMyMessages/show-picture';
 import { ProfilePage } from '../pages/iMyProfile/profile';
+import { ProfileFixPage } from '../pages/iMyProfile/profileFix';
 import { VerificationPage } from '../pages/iMyVerification/verification';
 import { PhoneService } from '../services/iMyPhone';
 import { PictureService } from '../services/iMyPicture';
@@ -25,6 +26,7 @@ import { MyApp } from './app.component';
     LoginPage,
     VerificationPage,
     ProfilePage,
+    ProfileFixPage,
     ChatsOptionsComponent,
     NewChatComponent,
     MessagesOptionsComponent,
@@ -47,6 +49,7 @@ import { MyApp } from './app.component';
     LoginPage,
     VerificationPage,
     ProfilePage,
+    ProfileFixPage,
     ChatsOptionsComponent,
     NewChatComponent,
     MessagesOptionsComponent,

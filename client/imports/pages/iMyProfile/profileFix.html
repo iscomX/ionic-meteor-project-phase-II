@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar color="iMy_color">
+        <ion-title>{{profile.name}} profile</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="profile-Fix-page-content">
+
+
+    <div class="profile-picture">
+        <img *ngIf="picture" [src]="picture">
+    </div>
+
+    <ion-item class="profile-name">
+        <ion-label stacked>Name</ion-label>
+        <ion-input [(ngModel)]="profile.name" placeholder="Your name"></ion-input>
+    </ion-item>
+
+    <ion-content padding>
+        <ion-list>
+            <button ion-item>
+                    <ion-avatar item-left>
+                          <img [src]="picture">
+                    </ion-avatar>
+                    <h2>{{ profile.name }}</h2>
+                    <ion-icon name="arrow-forward" item-right></ion-icon>
+            </button>
+        </ion-list>
+    </ion-content>
+
+
+
+    <!-- 
+    <ion-item class="item">
+        <ion-label class="email" floating>ssssss</ion-label>
+        <ion-label floating>dfskjhdfkjhsk</ion-label>
+    </ion-item>
+
+    -->
+
+
+</ion-content>
