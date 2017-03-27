@@ -1,0 +1,30 @@
+<ion-content class="chats-options-page-content">
+
+    <ion-list class="options">
+
+        <!-- Profile button  -->
+        <button ion-item class="option option-profile" (click)="editProfile()">
+      <ion-icon name="contact" class="option-icon"></ion-icon>
+      <div class="option-name">Profile</div>
+    </button>
+
+        <!-- Logout button  -->
+        <button ion-item class="option option-logout" (click)="logout()">
+      <ion-icon name="log-out" class="option-icon"></ion-icon>
+      <div class="option-name">Logout</div>
+    </button>
+
+        <!-- Test button 1 -->
+        <button ion-item class="option option-contact" (click)="logout()">
+      <ion-icon ios="ios-cog" md="md-cog" class="option-icon"></ion-icon>
+      <div class="option-name">Contact</div>
+    </button>
+
+        <!-- Test button 2 -->
+        <button ion-item class="option option-settings" (click)="logout()">
+      <ion-icon ios="ios-settings" md="md-settings" class="option-icon" > </ion-icon>
+      <div class="option-name">Settings</div>
+    </button>
+
+    </ion-list>
+</ion-content>
