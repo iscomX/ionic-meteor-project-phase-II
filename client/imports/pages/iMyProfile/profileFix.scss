@@ -1,25 +1,13 @@
-.profile-Fix-page-content {
-    .profile-picture {
-        border-radius: 50%;
-        width: 50px;
-        float: left;
-    }
-    .item {
-        .email {
-            color: #861721;
+.header {
+    .item-avatar {
+        .pic {
+            width: 80px !important;
+            height: 80px !important;
         }
     }
-    .user-name {
-        margin-left: 20px;
-        margin-top: 25px;
-        transform: translate(0, -50%);
-        float: left;
-    }
-    .details {
-        padding: 0px 12px 20px 12px;
-    }
-    .details img {
-        float: left;
-        margin-right: 12px;
+    .profile-name {
+        font-size: 20px;
+        color: #010101;
+        font-family: 'Roboto-Light';
     }
 }

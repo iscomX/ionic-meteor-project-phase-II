@@ -30,6 +30,29 @@ export class ProfileFixPage implements OnInit {
     });
   }
 
+  selectProfilePicture(): void {
+    this.pictureService.select().then((blob) => {
+      this.uploadProfilePicture(blob);
+    })
+      .catch((e) => {
+        this.handleError(e);
+      });
+  }
+
+  uploadProfilePicture(blob: Blob): void {
+    this.pictureService.upload(blob).then((picture) => {
+      this.profile.pictureId = picture._id;
+      this.picture = picture.url;
+    })
+      .catch((e) => {
+        this.handleError(e);
+      });
+  }
+
+  gotoChat(): void {
+    this.navCtrl.setRoot(ChatsPage);
+  }
+
   handleError(e: Error): void {
     console.error(e);
 

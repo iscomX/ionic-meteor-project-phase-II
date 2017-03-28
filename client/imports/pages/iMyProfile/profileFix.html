@@ -1,42 +1,76 @@
-<ion-header>
+<ion-header class="header">
     <ion-navbar color="iMy_color">
-        <ion-title>{{profile.name}} profile</ion-title>
-    </ion-navbar>
+        <!-- ------------------------- -->
+        <ion-item color="iMy_color">
+            <!-- -------------- -->
+            <ion-avatar item-left class="item-avatar">
+                <img [src]="picture" class="pic">
+            </ion-avatar>
+            <!-- -------------- -->
+            <h2 class="profile-name">{{ profile.name }}</h2>
+            <!-- -------------- -->
+        </ion-item>
+        <!-- ------------------------- -->
+        <ion-buttons end>
+            <button ion-button (click)="gotoChat()">Done</button>
+        </ion-buttons>
+        <!-- ------------------------- -->
+        <!--        <ion-nav-back-button end>
+            <i class="ion-arrow-left-c"></i> Back
+        </ion-nav-back-button>
+    </ion-navbar>-->
 </ion-header>
 
-<ion-content class="profile-Fix-page-content">
 
-
-    <div class="profile-picture">
-        <img *ngIf="picture" [src]="picture">
+<!--<ion-header-bar class="bar-calm" style="height:200px">
+    <div class="list">
+        <a class="item item-avatar">
+            <img [src]="picture">
+            <p>This is an image</p>
+        </a>
     </div>
+</ion-header-bar>-->
 
-    <ion-item class="profile-name">
-        <ion-label stacked>Name</ion-label>
-        <ion-input [(ngModel)]="profile.name" placeholder="Your name"></ion-input>
-    </ion-item>
-
-    <ion-content padding>
-        <ion-list>
-            <button ion-item>
-                    <ion-avatar item-left>
+<!--<ion-content padding class="profileFix">
+        <ion-list class="list">
+        <button ion-item class="avatar">
+                    <ion-avatar item-left class="avatar-picture">
                           <img [src]="picture">
                     </ion-avatar>
-                    <h2>{{ profile.name }}</h2>
-                    <ion-icon name="arrow-forward" item-right></ion-icon>
+                    <h2 class="profil-txt">{{ profile.name }}</h2>
             </button>
-        </ion-list>
-    </ion-content>
+    </ion-list>
 
-
-
-    <!-- 
-    <ion-item class="item">
-        <ion-label class="email" floating>ssssss</ion-label>
-        <ion-label floating>dfskjhdfkjhsk</ion-label>
+    <ion-item>
+        <ion-icon name="logo-twitter" item-left></ion-icon>
+        Followers
+        <ion-badge item-right>260k</ion-badge>
     </ion-item>
 
-    -->
+</ion-content>-->
 
 
-</ion-content>
+
+<!--
+
+<ion-footer color="iMy_color">
+    <ion-tabs>
+        <ion-tab tabIcon="contact"></ion-tab>
+        <ion-tab tabIcon="compass"></ion-tab>
+        <ion-tab tabIcon="analytics"></ion-tab>
+        <ion-tab tabIcon="settings"></ion-tab>
+    </ion-tabs>`
+</ion-footer>
+
+
+
+
+<ion-footer-bar align-title="left" class="bar-assertive">
+    <div class="buttons">
+        <button class="button">Left Button</button>
+    </div>
+    <h1 class="title">Title!</h1>
+    <div class="buttons">
+        <button class="button">Right Button</button>
+    </div>
+</ion-footer-bar>-->
