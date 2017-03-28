@@ -15,7 +15,7 @@ Meteor.startup(() => {
 //==============================User-A========================//
   let picture = importPictureFromUrl({
                                       name: 'user-A.png',
-                                      url: '/assets/chat-background.jpg',
+                                      url: 'https://ionic-meteor.000webhostapp.com/user-A.png'
                                      });
 
   Accounts.createUserWithPhone({
