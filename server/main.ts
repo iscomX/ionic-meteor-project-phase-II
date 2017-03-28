@@ -13,10 +13,9 @@ Meteor.startup(() => {
   if (Users.collection.find().count() > 0) { return; }
 //--------> user start <--------//
 //==============================User-A========================//
-// url(/assets/chat-background.jpg);
   let picture = importPictureFromUrl({
                                       name: 'user-A.png',
-                                      url: 'https://ionic-meteor.000webhostapp.com/user-A.png'
+                                      url: '/assets/chat-background.jpg',
                                      });
 
   Accounts.createUserWithPhone({
