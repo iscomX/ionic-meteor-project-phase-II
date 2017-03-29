@@ -18,7 +18,7 @@ export class ChatsOptionsComponent {
     private viewCtrl: ViewController
   ) {}
 
-  editProfile(): void {
+  goToProfile(): void {
     this.viewCtrl.dismiss().then(() => {
       this.navCtrl.push(ProfileFixPage);
     });
