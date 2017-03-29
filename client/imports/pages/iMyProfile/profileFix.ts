@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AlertController, NavController } from 'ionic-angular';
+import { Component, OnInit, Injectable } from '@angular/core';
+import { AlertController, NavController, Alert, ViewController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
 import { Pictures } from '../../../../imports/collections';
 import { Profile } from '../../../../imports/models';
@@ -17,8 +17,15 @@ export class ProfileFixPage implements OnInit {
   constructor(
     private alertCtrl: AlertController,
     private navCtrl: NavController,
-    private pictureService: PictureService
+    private pictureService: PictureService,
+    private viewCtrl: ViewController
   ) {}
+
+    goToChat(): void {
+    this.viewCtrl.dismiss().then(() => {
+      this.navCtrl.push(ChatsPage);
+    });
+  }
 
   ngOnInit(): void {
     this.profile = Meteor.user().profile || {

@@ -3,6 +3,9 @@
         <ion-title>Profile</ion-title>
 
         <ion-buttons end>
+            <button ion-button icon-only (click)="goToChat()">
+                 <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
+            </button>
             <button ion-button icon-only>
                   <ion-icon ios="ios-person-add" md="md-person-add"></ion-icon>
             </button>
@@ -19,17 +22,13 @@
 
 <ion-footer>
     <ion-toolbar color="iMy_color" position="bottom">
-        
-        <ion-buttons end>
-            <!-- message send -->
+
+<!--        <ion-buttons end>
+           
             <button ion-button icon-only>
               <ion-icon ios="ios-send" md="md-send"></ion-icon>
             </button>
-        </ion-buttons>
-
-<!--    <ion-tabs>
-        <ion-tab icon="ion-checkmark" title="Checklist"> </ion-tab>
-    </ion-tabs>-->
+        </ion-buttons>-->
 
     </ion-toolbar>
 </ion-footer>
