@@ -1,18 +1,36 @@
-<ion-header class="header">
+<ion-header>
     <ion-navbar color="iMy_color">
-        <ion-item color="iMy_color">
-            <ion-avatar item-left class="item-avatar">
-                <img [src]="picture" class="pic">
-            </ion-avatar>
-            <p class="profile-name">{{ profile.name }}</p>
-        </ion-item>
+        <ion-title>Profile</ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only>
+                  <ion-icon ios="ios-person-add" md="md-person-add"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                 <ion-icon ios="ios-more" md="md-more"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
-    <h2>sfsfssf</h2>
 </ion-content>
 
+
 <ion-footer>
-    <div color="iMy_color"></div>
+    <ion-toolbar color="iMy_color" position="bottom">
+        
+        <ion-buttons end>
+            <!-- message send -->
+            <button ion-button icon-only>
+              <ion-icon ios="ios-send" md="md-send"></ion-icon>
+            </button>
+        </ion-buttons>
+
+<!--    <ion-tabs>
+        <ion-tab icon="ion-checkmark" title="Checklist"> </ion-tab>
+    </ion-tabs>-->
+
+    </ion-toolbar>
 </ion-footer>
+
