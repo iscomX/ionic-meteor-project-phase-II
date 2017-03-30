@@ -5,7 +5,7 @@ import * as Moment from 'moment';
 import { Observable, Subscriber } from 'rxjs';
 import { Chats, Messages, Users, Pictures } from '../../../../imports/collections';
 import { Chat, Message } from '../../../../imports/models';
-import { ChatsOptionsComponent } from './chats-options';
+import { menuChatComponent } from './menuChat';
 import { MessagesPage } from '../iMyMessages/messages';
 import template from './chats.html';
 import { NewChatComponent } from './new-chat';
@@ -119,7 +119,7 @@ export class ChatsPage implements OnInit {
   }
 
   showOptions(): void {
-    const popover = this.popoverCtrl.create(ChatsOptionsComponent, {}, {
+    const popover = this.popoverCtrl.create(menuChatComponent, {}, {
       cssClass: 'options-popover chats-options-popover'
     });
 

@@ -3,12 +3,12 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import { MomentModule } from 'angular2-moment';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { ChatsPage } from '../pages/iMyChats/chats'
-import { ChatsOptionsComponent } from '../pages/iMyChats/chats-options';
+import { menuChatComponent } from '../pages/iMyChats/menuChat';
 import { NewChatComponent } from '../pages/iMyChats/new-chat';
 import { LoginPage } from '../pages/iMyLogin/login';
 import { MessagesPage } from '../pages/iMyMessages/messages';
 import { MessagesAttachmentsComponent } from '../pages/iMyMessages/messages-attachments';
-import { MessagesOptionsComponent } from '../pages/iMyMessages/messages-options';
+import { menuMessagesComponent } from '../pages/iMyMessages/menuMessages';
 import { NewLocationMessageComponent } from '../pages/iMyMessages/location-message';
 import { ShowPictureComponent } from '../pages/iMyMessages/show-picture';
 import { ProfilePage } from '../pages/iMyProfile/profile';
@@ -27,9 +27,9 @@ import { MyApp } from './app.component';
     VerificationPage,
     ProfilePage,
     ProfileFixPage,
-    ChatsOptionsComponent,
+    menuChatComponent,
     NewChatComponent,
-    MessagesOptionsComponent,
+    menuMessagesComponent,
     MessagesAttachmentsComponent,
     NewLocationMessageComponent,
     ShowPictureComponent
@@ -50,9 +50,9 @@ import { MyApp } from './app.component';
     VerificationPage,
     ProfilePage,
     ProfileFixPage,
-    ChatsOptionsComponent,
+    menuChatComponent,
     NewChatComponent,
-    MessagesOptionsComponent,
+    menuMessagesComponent,
     MessagesAttachmentsComponent,
     NewLocationMessageComponent,
     ShowPictureComponent

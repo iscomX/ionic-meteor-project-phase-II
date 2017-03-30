@@ -8,7 +8,7 @@ import { Messages } from '../../../../imports/collections';
 import { Chat, Message, MessageType, Location } from '../../../../imports/models';
 import { PictureService } from '../../services/iMyPicture';
 import { MessagesAttachmentsComponent } from './messages-attachments';
-import { MessagesOptionsComponent } from './messages-options';
+import { menuMessagesComponent } from './menuMessages';
 import { ShowPictureComponent } from './show-picture';
 import template from './messages.html';
 
@@ -131,10 +131,10 @@ export class MessagesPage implements OnInit, OnDestroy {
   }
 
   showOptions(): void {
-    const popover = this.popoverCtrl.create(MessagesOptionsComponent, {
+    const popover = this.popoverCtrl.create(menuMessagesComponent, {
       chat: this.selectedChat
     }, {
-      cssClass: 'options-popover messages-options-popover'
+      cssClass: 'options-popover menuMessages-popover'
     });
 
     popover.present();
