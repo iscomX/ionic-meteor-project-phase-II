@@ -32,14 +32,17 @@
     //======================================================================//
     .list {
         .list-ico {
-            color: blue;
-            background-color: #ffe6e6;
+            background-color: #fff1ff;
             border-radius: 8px;
+            border: 2px solid #ccccff;
         }
         .list-info {
-            color: red;
-            background-color: #e6f2ff;
+            color: black;
+            background-color: #f4f1ff;
             border-radius: 8px;
+            border: 2px solid #ccccff;
+            text-indent: px;
+            font-weight: bold;
         }
     }
 }

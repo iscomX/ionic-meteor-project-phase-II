@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { AlertController, NavController, NavParams, ViewController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
 import { ChatsPage } from '../iMyChats/chats';
-import template from './messages-options.html';
+import template from './menuMessages.html';
 
 @Component({
   template
 })
-export class MessagesOptionsComponent {
+export class menuMessagesComponent {
   constructor(
     public alertCtrl: AlertController,
     public navCtrl: NavController,

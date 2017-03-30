@@ -4,13 +4,13 @@ import { PhoneService } from '../../services/iMyPhone';
 import { LoginPage } from '../iMyLogin/login';
 import { ProfilePage } from '../iMyProfile/profile';
 import { ProfileFixPage, } from '../iMyProfile/profileFix';
-import template from './chats-options.html';
+import template from './menuChat.html';
 
 @Component({
   template
 })
 @Injectable()
-export class ChatsOptionsComponent {
+export class menuChatComponent {
   constructor(
     private alertCtrl: AlertController,
     private navCtrl: NavController,
