@@ -15,7 +15,7 @@ Meteor.startup(() => {
 //==============================User-A========================//
   let picture = importPictureFromUrl({
                                       name: 'user-A.png',
-                                      url: 'https://ionic-meteor.000webhostapp.com/user-A.png'
+                                      url: 'https://organicthemes.com/demo/profile/files/2012/12/profile_img.png'
                                      });
 
   Accounts.createUserWithPhone({
@@ -29,7 +29,7 @@ Meteor.startup(() => {
 //==============================User-B========================//
   picture = importPictureFromUrl({
     name: 'user-B.jpg',
-    url: 'https://ionic-meteor.000webhostapp.com/user-B.png'
+    url: 'http://csgobuff.pro/img/upload/player/59.png'
   });
 
   Accounts.createUserWithPhone({
@@ -43,7 +43,7 @@ Meteor.startup(() => {
 //==============================User-C========================//
   picture = importPictureFromUrl({
     name: 'user-C.jpg',
-    url: 'https://ionic-meteor.000webhostapp.com/user-C.jpg'
+    url: 'http://csgobuff.pro/img/upload/player/58.png'
   });
 
   Accounts.createUserWithPhone({
@@ -57,7 +57,7 @@ Meteor.startup(() => {
 //==============================User-D========================//
   picture = importPictureFromUrl({
     name: 'user-D.jpg',
-    url: 'https://ionic-meteor.000webhostapp.com/user-D.jpg'
+    url: 'http://csgobuff.pro/img/upload/player/57.png'
   });
 
   Accounts.createUserWithPhone({
@@ -70,7 +70,7 @@ Meteor.startup(() => {
 //==============================User-E========================//
   picture = importPictureFromUrl({
     name: 'user-E.jpg',
-    url: 'https://ionic-meteor.000webhostapp.com/user-E.jpg'
+    url: 'http://csgobuff.pro/img/upload/player/56.png'
   });
 
   Accounts.createUserWithPhone({
