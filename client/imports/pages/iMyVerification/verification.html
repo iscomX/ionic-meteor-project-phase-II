@@ -8,6 +8,7 @@
     </ion-navbar>
 </ion-header>
 
+<!--==========================================================-->
 <ion-content padding class="verification-page-content">
     <div class="instructions">
         <div> {{phone}}. </div>
@@ -17,3 +18,7 @@
         <ion-input [(ngModel)]="code" (keypress)="onInputKeypress($event)" type="tel" placeholder="Your verification code"></ion-input>
     </ion-item>
 </ion-content>
+<!--==========================================================-->
+<ion-footer style="height:25px">
+    <ion-toolbar color="iMy_color" position="bottom"> </ion-toolbar>
+</ion-footer>

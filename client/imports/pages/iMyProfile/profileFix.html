@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="header">
     <ion-navbar color="iMy_color">
         <ion-title>Profile</ion-title>
 
@@ -15,15 +15,50 @@
         </ion-buttons>
     </ion-navbar>
 </ion-header>
-
-<ion-content>
+<!--=======================================================-->
+<ion-content class="content">
+    <!--=======================================================-->
+    <!--
+        <ion-item>
+            <ion-avatar item-left class="item-avatar">
+                <img [src]="picture" class="pic">
+            </ion-avatar>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-left class="item-avatar">
+                <img [src]="picture" class="pic">
+            </ion-avatar>
+            <p class="profile-name">{{ profile.name }}</p>
+        </ion-item>
+        <ion-item>
+            <p class="profile-name">{{ profile.name }} {{phone}}.</p>
+        </ion-item>
+-->
+    <!--=======================================================-->
+    <div class="card">
+        <ion-item class="profile-item">
+            <div class="profile-picture big-profile-picture">
+                <img [src]="picture">
+            </div>
+            <h2 class="profile-name dark">{{ profile.name }}</h2>
+            <div class="profile-info">+2126660000003</div>
+        </ion-item>
+    </div>
+    <div>
+        <figure class="figure">
+            <img class="background" [src]="picture" alt="user image" />
+            <img class="profile" [src]="picture" alt="user image" />
+        </figure>
+    </div>
+    <!--=======================================================-->
 </ion-content>
+<!--=======================================================-->
 
 
-<ion-footer>
+<ion-footer style="height:25px">
     <ion-toolbar color="iMy_color" position="bottom">
 
-<!--        <ion-buttons end>
+        <!--        <ion-buttons end>
            
             <button ion-button icon-only>
               <ion-icon ios="ios-send" md="md-send"></ion-icon>
@@ -32,4 +67,3 @@
 
     </ion-toolbar>
 </ion-footer>
-
