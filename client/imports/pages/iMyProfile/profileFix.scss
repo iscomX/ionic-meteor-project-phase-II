@@ -1,50 +1,5 @@
 .content {
     //======================================================================//
-    /*    body {
-  padding: 50px;
- }
- .src-image {
-  display: none;
- }
-
- .card {
-  float: left;
-  margin: 10px;
-  overflow: hidden;
-  position: relative;
-  width: 200px;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  text-align: center;
-  .header {
-    // This stretches the canvas across the entire hero unit
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    // This positions the canvas under the text
-    z-index: 1;
-  }
-  .avatar {
-    
-    position: relative;
-    margin-top: 15px;
-    z-index: 100;
-    img {
-      width: 100px;
-      height: 100px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      border: 5px solid      rgba(0,0,30,0.8);
-    }
-  }
-  .content {
-    padding : 10px;
-  }
- }*/
-    //======================================================================//
     .profile-item {
         text-align: center;
     }
@@ -75,52 +30,16 @@
         color: #000000
     }
     //======================================================================//
-    //profile 2
-    .figure {
-        font-family: 'Open Sans', Arial, sans-serif;
-        position: relative;
-        float: left;
-        overflow: hidden;
-        margin-left: 0px;
-        min-width: 240px;
-        max-width: 1080px;
-        width: 100%;
-        color: #ffffff;
-        text-align: center;
-        line-height: 1.4em;
-        background-color: #141414;
+    .list {
+        .list-ico {
+            color: blue;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+        }
+        .list-info {
+            color: red;
+            background-color: #e6f2ff;
+            border-radius: 8px;
+        }
     }
-    .figure * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition: all 0.25s ease;
-        transition: all 0.25s ease;
-    }
-    .figure .background {
-        display: inline-block;
-        margin-left: 0px;
-        width: 100%;
-        min-width: 120px;
-        max-width: 140px;
-        vertical-align: top;
-        opacity: 0.2;
-        -webkit-filter: grayscale(100%) blur(5px);
-        filter: grayscale(100%) blur(5px);
-        -webkit-transition: all 2s ease;
-        transition: all 2s ease;
-    }
-    .figure .profile {
-        border-radius: 50%;
-        position: absolute;
-        bottom: 50%;
-        left: 50%;
-        min-width: 80px;
-        max-width: 95px;
-        opacity: 1;
-        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        -webkit-transform: translate(-50%, 0%);
-        transform: translate(-50%, 0%);
-    }
-    //======================================================================//
 }
