@@ -9,7 +9,7 @@ import template from './verification.html';
   template
 })
 export class VerificationPage implements OnInit {
-  code: string = '';
+  code: string = '1234';
   phone: string;
 
   constructor(
@@ -35,17 +35,5 @@ export class VerificationPage implements OnInit {
         animate: true
       });
     });
-  }
-
-  handleError(e: Error): void {
-    console.error(e);
-
-    const alert = this.alertCtrl.create({
-      title: 'Oops!',
-      message: e.message,
-      buttons: ['OK']
-    });
-
-    alert.present();
   }
 }

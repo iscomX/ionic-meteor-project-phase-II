@@ -11,8 +11,18 @@ Meteor.startup(() => {
   }
 
   if (Users.collection.find().count() > 0) { return; }
-//--------> user start <--------//
-//==============================User-A========================//
+  data();
+
+  });
+
+//======================Fonction========================//
+function importPictureFromUrl(options: { name: string, url: string }): 
+     Picture { const description = { name: options.name };
+     return Meteor.call('ufsImportURL', options.url, description, 'pictures');
+}
+//==============================================//
+function data(){
+ //==============================User-A========================//
   let picture = importPictureFromUrl({
                                       name: 'user-A.png',
                                       url: 'https://organicthemes.com/demo/profile/files/2012/12/profile_img.png'
@@ -26,7 +36,7 @@ Meteor.startup(() => {
                                       }
                               });
 
-//==============================User-B========================//
+ //==============================User-B========================//
   picture = importPictureFromUrl({
     name: 'user-B.jpg',
     url: 'http://csgobuff.pro/img/upload/player/59.png'
@@ -40,7 +50,7 @@ Meteor.startup(() => {
     }
   });
 
-//==============================User-C========================//
+ //==============================User-C========================//
   picture = importPictureFromUrl({
     name: 'user-C.jpg',
     url: 'http://csgobuff.pro/img/upload/player/58.png'
@@ -54,7 +64,7 @@ Meteor.startup(() => {
     }
   });
 
-//==============================User-D========================//
+ //==============================User-D========================//
   picture = importPictureFromUrl({
     name: 'user-D.jpg',
     url: 'http://csgobuff.pro/img/upload/player/57.png'
@@ -67,7 +77,7 @@ Meteor.startup(() => {
       pictureId: picture._id
     }
   });
-//==============================User-E========================//
+ //==============================User-E========================//
   picture = importPictureFromUrl({
     name: 'user-E.jpg',
     url: 'http://csgobuff.pro/img/upload/player/56.png'
@@ -79,13 +89,6 @@ Meteor.startup(() => {
       name: 'person E',
       pictureId: picture._id
     }
-    });
   });
-
-//==============================================//
-function importPictureFromUrl(options: { name: string, url: string }): 
-     Picture { const description = { name: options.name };
-     return Meteor.call('ufsImportURL', options.url, description, 'pictures');
+  
 }
-
-//==============================================//

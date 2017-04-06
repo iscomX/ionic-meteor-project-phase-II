@@ -17,8 +17,17 @@
     </div>
 
     <ion-item>
-        <ion-input class="text-input" [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="Your phone number"></ion-input>
+        <div>
+             <ion-input class="text-input" [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="Your phone number"></ion-input>
+        </div>
+        </div>
+             <ion-input class="text-input" type="tel" [(ngModel)]="phone" (keypress)="onInputKeypress($event)" placeholder="Your phone number"></ion-input>
+        </div>
+        <div>
+             <ion-input [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="Your phkkkone number"></ion-input>
+        </div>
     </ion-item>
+    <ion-input placeholder="Your phone number"></ion-input>
 </ion-content>
 
 

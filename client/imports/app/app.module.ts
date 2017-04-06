@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { MomentModule } from 'angular2-moment';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+//page ts file
 import { ChatsPage } from '../pages/iMyChats/chats'
 import { menuChatComponent } from '../pages/iMyChats/menuChat';
 import { NewChatComponent } from '../pages/iMyChats/new-chat';
