@@ -1,8 +1,0 @@
-{
-    "accounts-phone": {
-        "verificationWaitTime": 0,
-        "verificationRetriesWaitTime": 0,
-        "adminPhoneNumbers": ["+212666000010", "+212666000020", "+212666000030"],
-        "phoneVerificationMasterCode": "1234"
-    }
-}

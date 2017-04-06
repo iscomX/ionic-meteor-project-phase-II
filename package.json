@@ -1,9 +1,7 @@
 {
     "name": "iMy_Chat",
     "private": true,
-    "scripts": {
-        "start": "meteor run --settings private/settings.json"
-    },
+    "scripts": {"start": "meteor"},
     "dependencies": {
         "@angular/common": "2.2.1",
         "@angular/compiler": "2.2.1",

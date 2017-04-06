@@ -3,9 +3,7 @@ import { Mongo } from 'meteor/mongo';
 import { Chats, Messages, Pictures, Users } from '../imports/collections';
 import { Chat, Message, Picture, User } from '../imports/models';
 
-Meteor.publishComposite('users', function(
-  pattern: string
-): PublishCompositeConfig<User> {
+Meteor.publishComposite('users', function(pattern: string): PublishCompositeConfig<User> {
   if (!this.userId) {
     return;
   }
@@ -38,9 +36,7 @@ Meteor.publishComposite('users', function(
   };
 });
 
-Meteor.publish('messages', function(
-  chatId: string,
-  messagesBatchCounter: number): Mongo.Cursor<Message> {
+Meteor.publish('messages', function(chatId: string,messagesBatchCounter: number): Mongo.Cursor<Message> {
   if (!this.userId || !chatId) {
     return;
   }
