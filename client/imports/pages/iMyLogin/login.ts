@@ -1,34 +1,26 @@
+import { Injectable } from '@angular/core';
+import { Platform } from 'ionic-angular';
+import { Sim } from 'ionic-native';
+import { Accounts } from 'meteor/accounts-base';
+import { Meteor } from 'meteor/meteor';
 import { Component, AfterContentInit } from '@angular/core';
 import { Alert, AlertController, NavController } from 'ionic-angular';
-import { PhoneService } from '../../services/iMyPhone';
 import { VerificationPage } from '../iMyVerification/verification';
 import template from './login.html';
 
 @Component({
   template
 })
-export class LoginPage implements AfterContentInit {
+export class LoginPage{
   phone = '';
 
   constructor(
     private alertCtrl: AlertController,
-    private phoneService: PhoneService,
     private navCtrl: NavController
   ) {}
 
-  ngAfterContentInit() {
-    this.phoneService.getNumber().then((phone) => {
-      if (phone) {
-        this.login(phone);
-      }
-    });
-  }
 
-  onInputKeypress({keyCode}: KeyboardEvent): void {
-    if (keyCode === 13) {
-      this.login();
-    }
-  }
+  onInputKeypress({keyCode}: KeyboardEvent): void { if (keyCode === 13) { this.login(); } }
 
   login(phone: string = this.phone): void {
     const alert = this.alertCtrl.create({
@@ -54,7 +46,7 @@ export class LoginPage implements AfterContentInit {
 
   handleLogin(alert: Alert): void {
     alert.dismiss().then(() => {
-      return this.phoneService.verify(this.phone);
+      return this.verifyX(this.phone);
     })
     .then(() => {
       this.navCtrl.push(VerificationPage, {
@@ -66,6 +58,17 @@ export class LoginPage implements AfterContentInit {
     });
   }
 
+  verifyX(phoneNumber: string): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      Accounts.requestPhoneVerification(phoneNumber, (e: Error) => {
+        if (e) {
+          return reject(e);
+        }
+
+        resolve();
+      });
+    });
+  }
   handleError(e: Error): void {
     console.error(e);
 
