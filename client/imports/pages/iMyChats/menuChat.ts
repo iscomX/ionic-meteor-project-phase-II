@@ -1,6 +1,5 @@
 import { Component, Injectable } from '@angular/core';
 import { Alert, AlertController, NavController, ViewController } from 'ionic-angular';
-import { PhoneService } from '../../services/iMyPhone';
 import { LoginPage } from '../iMyLogin/login';
 import { ProfilePage } from '../iMyProfile/profile';
 import { ProfileFixPage, } from '../iMyProfile/profileFix';
@@ -14,7 +13,6 @@ export class menuChatComponent {
   constructor(
     private alertCtrl: AlertController,
     private navCtrl: NavController,
-    private phoneService: PhoneService,
     private viewCtrl: ViewController
   ) {}
 
@@ -47,10 +45,20 @@ export class menuChatComponent {
       alert.present();
     });
   }
+  logoutX(): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      Meteor.logout((e: Error) => {
+        if (e) {
+          return reject(e);
+        }
 
+        resolve();
+      });
+    });
+  }
   handleLogout(alert: Alert): void {
     alert.dismiss().then(() => {
-      return this.phoneService.logout();
+      return this.logoutX();
     })
     .then(() => {
       this.navCtrl.setRoot(LoginPage, {}, {

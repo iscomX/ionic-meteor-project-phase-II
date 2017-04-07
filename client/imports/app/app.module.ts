@@ -15,7 +15,6 @@ import { ShowPictureComponent } from '../pages/iMyMessages/show-picture';
 import { ProfilePage } from '../pages/iMyProfile/profile';
 import { ProfileFixPage } from '../pages/iMyProfile/profileFix';
 import { VerificationPage } from '../pages/iMyVerification/verification';
-import { PhoneService } from '../services/iMyPhone';
 import { PictureService } from '../services/iMyPicture';
 import { MyApp } from './app.component';
 
@@ -39,7 +38,7 @@ import { MyApp } from './app.component';
     IonicModule.forRoot(MyApp),
     MomentModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAWoBdZHCNh5R-hB5S5ZZ2oeoYyfdDgniA'
+      apiKey: 'AIzaSyDSsjP7rcP7GM0j1Pyy865Ty3Zdi0LaFwI'
     })
   ],
   bootstrap: [IonicApp],
@@ -60,7 +59,6 @@ import { MyApp } from './app.component';
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    PhoneService,
     PictureService
   ]
 })
