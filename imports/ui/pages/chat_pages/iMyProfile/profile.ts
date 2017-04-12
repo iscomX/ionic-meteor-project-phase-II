@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, NavController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
-import { Pictures } from '../../../../imports/collections';
-import { Profile } from '../../../../imports/models';
-import { PictureService } from '../../services/iMyPicture';
+import { Pictures } from '../../../utils/chat_logic/collections';
+import { Profile } from '../../../utils/chat_logic/models';
+import { PictureService } from '../../../utils/chat_logic/services/iMyPicture';
 import { ChatsPage } from '../iMyChats/chats';
 import template from './profile.html';
 

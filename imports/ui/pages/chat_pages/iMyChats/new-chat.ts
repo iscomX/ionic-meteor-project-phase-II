@@ -3,8 +3,8 @@ import { AlertController, ViewController } from 'ionic-angular';
 import { MeteorObservable } from 'meteor-rxjs';
 import { _ } from 'meteor/underscore';
 import { Observable, Subscription, BehaviorSubject } from 'rxjs';
-import { Chats, Pictures, Users } from '../../../../imports/collections';
-import { User } from '../../../../imports/models';
+import { Chats, Pictures, Users } from '../../../utils/chat_logic/collections';
+import { User } from '../../../utils/chat_logic/models';
 import template from './new-chat.html';
 
 @Component({

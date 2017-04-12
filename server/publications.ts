@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
-import { Chats, Messages, Pictures, Users } from '../imports/collections';
-import { Chat, Message, Picture, User } from '../imports/models';
+import { Chats, Messages, Pictures, Users } from '../imports/ui/utils/chat_logic/collections';
+import { Chat, Message, Picture, User } from '../imports/ui/utils/chat_logic/models';
 
 Meteor.publishComposite('users', function(pattern: string): PublishCompositeConfig<User> {
   if (!this.userId) {

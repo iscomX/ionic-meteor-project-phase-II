@@ -3,8 +3,8 @@ import { NavController, PopoverController, ModalController, AlertController } fr
 import { MeteorObservable } from 'meteor-rxjs';
 import * as Moment from 'moment';
 import { Observable, Subscriber } from 'rxjs';
-import { Chats, Messages, Users, Pictures } from '../../../../imports/collections';
-import { Chat, Message } from '../../../../imports/models';
+import { Chats, Messages, Users, Pictures } from '../../../utils/chat_logic/collections';
+import { Chat, Message } from '../../../utils/chat_logic/models';
 import { menuChatComponent } from './menuChat';
 import { MessagesPage } from '../iMyMessages/messages';
 import template from './chats.html';

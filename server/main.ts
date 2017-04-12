@@ -1,8 +1,8 @@
-import { Profile } from './../imports/models';
+import { Profile } from './../imports/ui/utils/chat_logic/models';
 import { Accounts } from 'meteor/accounts-base';
 import { Meteor } from 'meteor/meteor';
-import { Chats, Messages, Users } from '../imports/collections';
-import { MessageType, Picture } from '../imports/models';
+import { Chats, Messages, Users } from '../imports/ui/utils/chat_logic/collections';
+import { MessageType, Picture } from '../imports/ui/utils/chat_logic/models';
 
 Meteor.startup(() => {
   if (Meteor.settings) {
