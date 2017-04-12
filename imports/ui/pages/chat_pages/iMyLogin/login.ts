@@ -5,7 +5,7 @@ import { Accounts } from 'meteor/accounts-base';
 import { Meteor } from 'meteor/meteor';
 import { Component, AfterContentInit } from '@angular/core';
 import { Alert, AlertController, NavController } from 'ionic-angular';
-import { VerificationPage } from '../iMyVerification/verification';
+import { VerificationPage } from './verification';
 import template from './login.html';
 
 @Component({

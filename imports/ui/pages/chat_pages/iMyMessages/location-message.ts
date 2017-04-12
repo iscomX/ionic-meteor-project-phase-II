@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Platform, ViewController } from 'ionic-angular';
 import { Geolocation } from 'ionic-native';
 import { Observable, Subscription } from 'rxjs';
-import { Location } from '../../../../imports/models';
+import { Location } from '../../../utils/chat_logic/models';
 import template from './location-message.html';
 
 const DEFAULT_ZOOM = 8;

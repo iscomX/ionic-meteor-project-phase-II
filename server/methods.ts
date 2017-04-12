@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
-import { Chats, Messages } from '../imports/collections';
-import { MessageType, Profile } from '../imports/models';
+import { Chats, Messages } from '../imports/ui/utils/chat_logic/collections';
+import { MessageType, Profile } from '../imports/ui/utils/chat_logic/models';
 import { check, Match } from 'meteor/check';
 
 const nonEmptyString = Match.Where((str) => {

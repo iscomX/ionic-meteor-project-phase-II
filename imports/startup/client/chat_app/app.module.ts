@@ -3,19 +3,19 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import { MomentModule } from 'angular2-moment';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 //page ts file
-import { ChatsPage } from '../pages/iMyChats/chats'
-import { menuChatComponent } from '../pages/iMyChats/menuChat';
-import { NewChatComponent } from '../pages/iMyChats/new-chat';
-import { LoginPage } from '../pages/iMyLogin/login';
-import { MessagesPage } from '../pages/iMyMessages/messages';
-import { MessagesAttachmentsComponent } from '../pages/iMyMessages/messages-attachments';
-import { menuMessagesComponent } from '../pages/iMyMessages/menuMessages';
-import { NewLocationMessageComponent } from '../pages/iMyMessages/location-message';
-import { ShowPictureComponent } from '../pages/iMyMessages/show-picture';
-import { ProfilePage } from '../pages/iMyProfile/profile';
-import { ProfileFixPage } from '../pages/iMyProfile/profileFix';
-import { VerificationPage } from '../pages/iMyVerification/verification';
-import { PictureService } from '../services/iMyPicture';
+import { ChatsPage } from '../../../ui/pages/chat_pages/iMyChats/chats'
+import { menuChatComponent } from '../../../ui/pages/chat_pages/iMyChats/menuChat';
+import { NewChatComponent } from '../../../ui/pages/chat_pages/iMyChats/new-chat';
+import { LoginPage } from '../../../ui/pages/chat_pages/iMyLogin/login';
+import { VerificationPage } from '../../../ui/pages/chat_pages/iMyLogin/verification';
+import { MessagesPage } from '../../../ui/pages/chat_pages/iMyMessages/messages';
+import { MessagesAttachmentsComponent } from '../../../ui/pages/chat_pages/iMyMessages/messages-attachments';
+import { menuMessagesComponent } from '../../../ui/pages/chat_pages/iMyMessages/menuMessages';
+import { NewLocationMessageComponent } from '../../../ui/pages/chat_pages/iMyMessages/location-message';
+import { ShowPictureComponent } from '../../../ui/pages/chat_pages/iMyMessages/show-picture';
+import { ProfilePage } from '../../../ui/pages/chat_pages/iMyProfile/profile';
+import { ProfileFixPage } from '../../../ui/pages/chat_pages/iMyProfile/profileFix';
+import { PictureService } from '../../../ui/utils/chat_logic/services/iMyPicture';
 import { MyApp } from './app.component';
 
 @NgModule({

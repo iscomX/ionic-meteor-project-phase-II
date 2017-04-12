@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { Meteor } from 'meteor/meteor';
-import { ChatsPage } from '../pages/iMyChats/chats';
-import { LoginPage } from '../pages/iMyLogin/login';
+import { ChatsPage } from '../../../ui/pages/chat_pages/iMyChats/chats';
+import { LoginPage } from '../../../ui/pages/chat_pages/iMyLogin/login';
 import template from "./app.html";
 
 @Component({

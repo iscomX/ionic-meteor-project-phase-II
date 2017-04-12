@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { AlertController, Platform, ModalController, ViewController } from 'ionic-angular';
 import { Camera } from 'ionic-native';
-import { PictureService } from '../../services/iMyPicture';
-import { MessageType } from '../../../../imports/models';
+import { PictureService } from '../../../utils/chat_logic/services/iMyPicture';
+import { MessageType } from '../../../utils/chat_logic/models';
 import { NewLocationMessageComponent } from './location-message';
 import template from './messages-attachments.html';
 

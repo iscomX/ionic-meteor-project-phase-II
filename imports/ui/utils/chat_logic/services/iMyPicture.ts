@@ -3,8 +3,8 @@ import { Platform } from 'ionic-angular';
 import { ImagePicker } from 'ionic-native';
 import { UploadFS } from 'meteor/jalik:ufs';
 import { _ } from 'meteor/underscore';
-import { PicturesStore } from '../../../imports/collections';
-import { DEFAULT_PICTURE_URL } from '../../../imports/models';
+import { PicturesStore } from '../collections';
+import { DEFAULT_PICTURE_URL } from '../models';
 
 @Injectable()
 export class PictureService {
